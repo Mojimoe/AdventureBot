@@ -10,7 +10,9 @@ class Player:
         self.id = '0'
         self.name = 'UNDEFINED'
 
+        self.last_online = None
         self.scheduled_adventure = None
+        self.last_adventure = None
         self.paused = False
 
         self.race = "human"
@@ -94,7 +96,17 @@ class Player:
         maximum = config.delay_max
         minutes = utils.randfloat(minimum, maximum)
 
+        self.last_adventure = utils.get
         self.scheduled_adventure = utils.get_future_timestamp(minutes=minutes)
+
+    def reschedule_next_adventure(self):
+        # This method reschedules the next adventure if config time changes.
+        # You are expected to call this on all players if you want to update them.
+        minimum = config.delay_min
+        maximum = config.delay_max
+        minutes = utils.randfloat(minimum, maximum)
+
+        self.scheduled_adventure = self.last_adventure + utils.timedelta(minutes=minutes)
 
     def get_item_instance(self, slot):
         return self.items.get(slot, None)

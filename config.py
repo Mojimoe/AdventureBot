@@ -1,7 +1,8 @@
 import loader
 
-delay_min = 1# in minutes
-delay_max = 1.1 # in minutes
+delay_min = 40 # in minutes
+delay_max = 60 # in minutes
+keep_online = 80 # in minutes
 
 discord_admins = ['126573153462910977', '126737204482408449']
 discord_channel = '393252476125708288'

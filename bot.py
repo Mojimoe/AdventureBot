@@ -295,11 +295,17 @@ async def check_players_for_adventure():
     if len(world.players) == 0:
         return
 
-    for player_instance in list(world.players.values()):
-        if player_instance.paused is False and is_player_online(player_instance.id):
-            if player_instance.scheduled_adventure is None or player_instance.scheduled_adventure < utils.now():
-                message = player_instance.embark()
-                await broadcast(message)
+    for player_id, player_instance in world.players.items():
+        if is_player_online(player_id):
+            player_instance.last_online = utils.now()
+        
+        if player_instance.paused is True:
+            continue
+        if player_instance.last_online + utils.timedelta(minutes=config.keep_online) < utils.now():
+            continue
+        if player_instance.scheduled_adventure is None or player_instance.scheduled_adventure < utils.now():
+            message = player_instance.embark()
+            await broadcast(message)
 
 
 async def broadcast(message):
