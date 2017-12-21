@@ -1,0 +1,5 @@
+name: "leather armor"
+handle: "armor_leather_armor"
+slot: 'armor'
+tier: 1
+affinity: "dexterity"

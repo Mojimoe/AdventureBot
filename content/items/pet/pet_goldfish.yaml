@@ -1,0 +1,16 @@
+handle: "pet_goldfish"
+name: "goldfish"
+slot: "pet"
+possible_names:
+  - 'Sir Henry Agustus Fredric III'
+  - 'Fish'
+  - 'Goldilocks'
+  - 'Stinky'
+  - 'Gills'
+  - 'Belly-up'
+behaviors:
+  - "swims around in its bowl."
+  - "stares at you dumbly."
+  - "glubs softly."
+  - "swims around aimlessly."
+  - "promptly forgets what it was doing."

@@ -1,0 +1,16 @@
+handle: "pet_skull"
+name: "skull"
+slot: "pet"
+possible_names:
+  - 'Yorick'
+  - 'Alas'
+  - 'Horatio'
+  - 'Bob'
+  - 'McSkully Skulkins'
+  - 'Skullbert'
+behaviors:
+  - "grins at you, creepily."
+  - "remains motionless."
+  - "emits an ominous energy."
+  - "just keeps smiling."
+  - "just keeps on being a dead person's face."

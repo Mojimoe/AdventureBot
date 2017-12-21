@@ -1,0 +1,26 @@
+handle: "forest_cabin"
+category: "forest"
+text: "You find a secluded cabin here. A young elf maid sits on the steps. She waves pleasantly as you approach."
+select:
+  - chance: 0.5
+    text: "'*Oh! Traveler! You look so weary! Would you like to come inside?*' she says. The scent of cookies wafts from within. \nYou head inside and enjoy tea and cookies with the elf maid. She thanks you for your company, and sends you on your way with several warm cookies, for the road."
+    exp: 2
+  - chance: 0.5
+    text: "'*Hail, traveler! Could I ask you to round up my chickens? They've escaped from their pen!*' You agree, and travel behind the cabin, where you find the scattered chickens.\n"
+    select:
+      - evaluate: "player.dexterity_roll >= 8"
+        text: "You chase the chickens and manage to pick them up one by one. The elf maid thanks you for your hard work, and sends you on your way with a handful of gold coins and several warm cookies."
+        gold: 4
+        exp: 3
+      - text: "You chase the chickens, which run away from you. You work up quite a sweat trying to catch them all. The elf maid thanks you for your hard work, and sends you on your way with a handful of gold coins and several warm cookies."
+        gold: 4
+        exp: 6
+  - text: "'*Hail, traveler! Could I ask you to chop some firewood for me?*' You agree, and travel behind the cabin, where you there is a pile of logs.\n"
+    select:
+      - evaluate: "player.strength_roll >= 8"
+        text: "You bring down the axe with a steady rhythm, until the wood is entirely chopped. \nThe elf maid thanks you for your hard work, and sends you on your way with a handful of gold coins and several warm cookies."
+        gold: 4
+        exp: 3
+      - text: "You work up quite the sweat doing so, and have to rest several times, but you manage to chop all the wood. \nThe elf maid thanks you for your hard work, and sends you on your way with a handful of gold coins and several warm cookies."
+        gold: 4
+        exp: 6

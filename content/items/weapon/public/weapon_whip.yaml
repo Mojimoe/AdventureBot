@@ -1,0 +1,5 @@
+name: "whip"
+handle: "weapon_whip"
+slot: 'weapon'
+tier: 1
+affinity: "charisma"

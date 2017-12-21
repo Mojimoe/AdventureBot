@@ -1,0 +1,5 @@
+name: "trident"
+handle: "weapon_trident"
+slot: 'weapon'
+tier: 2
+affinity: "strength"

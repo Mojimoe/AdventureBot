@@ -1,0 +1,5 @@
+handle: "tower_discovery_a"
+category: "tower"
+public: False
+text: "You travel toward the archival tower to the north.\nAs you approach, the tower looms ominously on the horizon, seemingly touching the very sky. Its masonry is crumbling in places, and in places the disjoined stone bricks even levitate in place, as the tower holds itself together by magic alone.\nIt is said that Alden, the pale king, constructed this tower to study his greatest obsession...\nYou approach the tower..."
+next: "tower_discovery_b"

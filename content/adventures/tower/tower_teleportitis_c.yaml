@@ -1,0 +1,23 @@
+handle: "tower_teleportitis_c"
+category: "tower"
+public: False
+text: "...**You have teleportitis!** You teleport somewhere.\n"
+select:
+  - evaluate: "player.get_visits('tower_teleportitis_c') == 0"
+    text: "You appear in the royal palace's kitchens, directly in front of a servant carrying a plate of fine meats. The serving girl slams into you, dropping the tray. She screams. The world dissolves again.\nYou teleport somewhere else..."
+    next: "tower_teleportitis_c" # Loop back
+  - evaluate: "player.get_visits('tower_teleportitis_c') == 1"
+    text: "You appear five feet above the surface of the ocean. You plunge into the icy waters. You splash helplessly! Looking around, you can see no land anywhere on the horizon. The world dissolves again.\nYou teleport somewhere else..."
+    next: "tower_teleportitis_c" # Loop back
+  - evaluate: "player.get_visits('tower_teleportitis_c') == 2"
+    text: "You appear high in the air! You can see clouds all around you, and the land distantly beneath you! You fall, spiraling out of control! The world dissolves again.\nYou teleport somewhere else..."
+    next: "tower_teleportitis_c" # Loop back
+  - evaluate: "player.get_visits('tower_teleportitis_c') == 3"
+    text: "You appear in the forest. A nearby ogre looks at you, grunting in confusion. It raises a giant club and charges you. Just as it is about to swing, the world dissolves again.\nYou teleport somewhere else..."
+    next: "tower_teleportitis_c" # Loop back
+  - evaluate: "player.get_visits('tower_teleportitis_c') == 4"
+    text: "You appear in a snowy wasteland! Nothing is around for miles, and your flesh stings and burns in the cold. You fall to your knees. The world dissolves again.\nYou teleport somewhere else..."
+    next: "tower_teleportitis_c" # Loop back
+  - text: "You appear in the middle of the town square. You collapse, dizzy. You prepare yourself for more torment, but nothing seems to happen. **Your teleportitis has worn off!**\nYou lie in the dirt for a while. Although that was harrowing... you did experience quite a few new things."
+    exp: 30
+    item: title_lab_rat

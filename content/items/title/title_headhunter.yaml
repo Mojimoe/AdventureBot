@@ -1,0 +1,5 @@
+handle: "title_headhunter"
+name: headhunter
+slot: 'title'
+tier: 3
+affinity: "strength"

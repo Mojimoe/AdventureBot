@@ -1,0 +1,5 @@
+name: "executioner's axe"
+handle: "weapon_executioners_axe"
+slot: 'weapon'
+tier: 3
+affinity: "strength"

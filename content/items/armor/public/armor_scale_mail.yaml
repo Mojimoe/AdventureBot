@@ -1,0 +1,5 @@
+name: "scale mail"
+handle: "armor_Scale_mail"
+slot: 'armor'
+tier: 3
+affinity: "charisma"

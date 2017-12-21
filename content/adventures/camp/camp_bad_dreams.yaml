@@ -1,0 +1,11 @@
+handle: camp_bad_dreams
+category: camp
+random:
+  - text: "You rest and doze off. You dream about giving a speech to the adventurer's guild in only your underwear. You awake in a cold sweat."
+  - text: "You rest and drift off to sleep. You dream you have been missing class all year, and that there's a paper due tomorrow!"
+    select:
+      - evaluate: "player.intellect <= 2"
+        text: "You awake in a cold sweat... What a bizzare dream... You've never even gone to a school!"
+      - evaluate: "player.intellect >= 6"
+        text: "You awake in a cold sweat... What a dreadful dream!"
+      - text: "You awake in a cold sweat... How bizzare."

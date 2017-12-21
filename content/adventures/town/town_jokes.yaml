@@ -1,0 +1,23 @@
+handle: town_jokes
+category: town
+chance: 0.7
+text: "You meet Thaco, the town jester, here. He says:"
+sequence:
+  - random:
+    - text: "'*How many clerics does it take to repair a lightbulb? One, to cast cure light wounds!*' \nYou briefly wonder what a lightbulb is."
+    - text: "'*Why do paladins prefer chainmail? Because it's holey armor*!'"
+    - text: "'*What do you call a group of rogues? A surprise party*!'"
+    - text: "'*How many bards do you need to change a lightbulb? Three! One to change the bulb, one who writes the ballad of the bulb, and one who dies in the final chapter!*' \nYou briefly wonder what a lightbulb is."
+    - text: "'*A monk walks walks over to a hot-dog vendor and says, make me one with everything*!'"
+    - text: "'*How many player characters does it take to change a lightbulb? All of them! Never split the party!*' \nYou briefly wonder what a lightbulb is."
+    - text: "'*What's the difference between a wizard and a sorcerer? Class!*'"
+    - text: "'*What do you call a bard with no hands? No holds bard!*'"
+    - text: "'*What do you call a party without a healer? A clerical error!*'"
+    - text: "'*Did you hear the one about the angry mob? It's a riot!*'"
+    - text: "'*How many paladins does it take to change a lightbulb? Two! One to put in the new bulb, one to uphold the light*!' \nYou briefly wonder what a lightbulb is."
+    - text: "'*What do you call a mountaintop guarded by rogues? A sneak peak!*'"
+    - text: "'*Why does everyone love hit points? Because they're the life of the party!*'"
+  - select:
+    - evaluate: "player.intellect_affinity >= 3 and player.charisma_affinity >= 3"
+      text: "You laugh and smile."
+    - text: "You groan and hurry away."

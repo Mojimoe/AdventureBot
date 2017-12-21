@@ -1,0 +1,5 @@
+handle: "forest_riddle_dungeon_a"
+category: "forest"
+text: "Here you find an old door of ancient stone set against a wooded hill. Moss grows upon it, almost hiding it from view. You head inside, and enter a tunnel that pitches down and into the earth. Lighting a torch, you delve deeper..."
+evaluate: "not player.get_flag('forest_riddle_dungeon')"
+next: "forest_riddle_dungeon_b"

@@ -1,0 +1,6 @@
+name: "vorpal blade"
+handle: "weapon_vorpal_blade"
+slot: 'weapon'
+verb: 'snicker-snack'
+tier: 6
+affinity: "dexterity"

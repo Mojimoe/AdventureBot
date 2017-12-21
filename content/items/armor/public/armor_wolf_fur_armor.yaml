@@ -1,0 +1,5 @@
+name: "wolf fur armor"
+handle: "armor_wolf_fur_armor"
+slot: 'armor'
+tier: 1
+affinity: "dexterity"

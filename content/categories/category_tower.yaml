@@ -1,0 +1,10 @@
+handle: "tower"
+evaluate: "player.intellect >= 4 and player.intellect_affinity >= 3 and player.level >= 2"
+first: "tower_discovery_a"
+preambles:
+  - "You travel to the archive tower."
+  - "You head into the old king's archive tower."
+  - "You travel to the archival tower."
+  - "You set out to the archives."
+  - "You travel to the king's archives."
+  - "You travel to the archive tower in the north."

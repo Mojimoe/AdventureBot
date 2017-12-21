@@ -1,0 +1,6 @@
+name: "dungeoneer's mail"
+handle: 'armor_dungeoneers_mail'
+slot: 'armor'
+public: false
+tier: 1
+affinity: 'strength'

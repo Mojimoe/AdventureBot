@@ -1,0 +1,22 @@
+handle: "forest_lake"
+category: "forest"
+text: "You find a small lake in a clearing here. The water is clear and cool."
+random:
+  - text: "You spend some time relaxing, skipping stones across the water."
+    exp: 1
+  - text: "You spend some time wading in to the lake."
+    select:
+      - evaluate: "player.has_item('trinket_fishing_rod')"
+        text: "You take out your trusty fishing rod and catch a few fish. That evening you have a lovely grilled meal!"
+        exp: 7
+      - evaluate: "player.dexterity_roll >= 9"
+        text: "You catch fish in the water with your bare hands, and drag them onto the rocky shore to cook. That evening, you have delicious grilled fish!"
+        exp: 6
+      - evaluate: "player.dexterity_roll >= 6"
+        text: "You decide to fish with a sharpened stick. With some amount of difficulty, you manage to spear several fish! That evening you have a delicious grilled meal!"
+        exp: 5
+      - text: "You decide to try to catch a few fish. The fish are wily and slip away from you as soon as you draw near, but you enjoy your time splashing about in the cold water."
+        exp: 1
+  - evaluate: "player.intellect_affinity >= 3"
+    text: "You spend some time meditating by the edge of the water, listening to the sounds of wildlife. You feel refreshed and invigorated, and in tune with nature."
+    exp: 5

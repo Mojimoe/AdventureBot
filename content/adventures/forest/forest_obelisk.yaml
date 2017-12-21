@@ -1,0 +1,10 @@
+handle: forest_obelisk
+category: forest
+chance: 0.5
+text: You find a stone obelisk here, by the side of the road.
+random:
+  - text: "A worn inscription reads: '*In memory of those we have lost*'. You ponder it."
+  - text: "A worn inscription reads: '*For the holy union that was broke, of the dark it brought we never spoke*'. You ponder it."
+  - text: "A worn inscription adorns the obelisk: '*Don't forget to eat your vegetables.*' You ponder it."
+  - text: "A crisp inscription adorns the obelisk: '*Engraving this obelisk was a lot of work!*' You ponder it."
+  - text: "An inscription adorns the obelisk: '*Say the magic word, and be blessed*'. You ponder it."

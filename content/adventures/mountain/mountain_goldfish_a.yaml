@@ -1,0 +1,11 @@
+handle: "mountain_goldfish_a"
+category: "mountain"
+once: True
+evaluate: "not player.get_slot_filled('pet')"
+text: "Here, on a rocky outcropping, you find -- sitting motionless -- a goldfish, swimming happily in a glass bowl."
+random:
+  - text: "The goldfish eyes you.\nYou are miles from any body of water. You take pity on the goldfish, and decide to adopt it."
+    item: "pet_goldfish"
+  - evaluate: "player.alignment == 'chaotic'"
+    text: "Your stomach rumbles. You decide to put the goldfish out of its misery. You lick your lips... it's going to be fish for dinner!"
+    next: "mountain_goldfish_b"

@@ -1,0 +1,5 @@
+name: "chainmail"
+handle: "armor_chainmail"
+slot: 'armor'
+tier: 3
+affinity: "strength"

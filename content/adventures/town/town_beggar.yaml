@@ -1,0 +1,16 @@
+handle: "town_beggar"
+category: "town"
+evaluate: "not world.get_flag('town_beggar')"
+select:
+  - evaluate: "world.get_counter('town_beggar') >= 15"
+    text: "A tired-looking man with missing teeth stands by the side of the road. He smiles as you approach, and waves. '*I used to be a beggar, but then adventurers like you helped me get back on my feet! Now I'm repaying the favor whenever I can!*''"
+    execute: "world.set_flag('town_beggar')"
+  - text: "An old beggar with missing teeth huddles by the side of the road. '*Spare a coin?*' he asks, extending a tin cup."
+    select:
+      - evaluate: "player.gold < 1"
+        text: "You turn out your pockets, but have no coins. The beggar sighs softly."
+      - evaluate: "player.charisma <= 1 and player.get_visits('town_beggar') <= 2 and player.alignment == 'chaotic'"
+        text: "You turn up your nose and walk away."
+      - text: "You give the beggar a coin, out of pity. The beggar thanks you. 'May fortune smile upon you!' he says."
+        execute: "world.increment_counter('town_beggar')"
+        gold: -1

@@ -1,0 +1,27 @@
+handle: "town_tavern"
+category: "town"
+text: "You spy a worn-down tavern. You open the creaky door and step inside the dim room. You take a seat and order a drink."
+random:
+  - text: "\nYou hear a loud bar song begin: '*pawned me farm for a boat*, *first thing she did was sink*, *swam back on a plank of wood*, *I'd sell me soul for a drink!*' After a few more drinks, you join in."
+    exp: 3
+  - text: "\nYou hear a loud dwarvish bar song begin. It is a winding and seemingly neverending account of the tithes the old dwarven empire made to Armok."
+    select: 
+      - evaluate: "player.race == 'dwarf'"
+        text: "You join in with the later verses, which you know by heart. The whole bar chants loudly at the end of every verse: *Blood for the blood god, blood for Armok!*"
+        exp: 10
+      - text: "The song meanders and seems to never end, jumping from one tale to the next, but at its heart it tells the story of the dwarven empire."
+        exp: 3
+  - text: "\nYou hear a gnomish bar song begin. It is an upbeat tune that tells the story of Gnome Ann, whose exploits stretched plausibility."
+    select:
+      - evaluate: "player.race == 'gnome'"
+        text: "You join in with the later verses, which you know by heart. You even sing the verse about the slaying of the worst witch."
+        exp: 10
+      - text: "As each verse continues, the exploits of Gnome Ann get more and more fantastical. The gnomes of the bar finish each verse with 'She was Gnome Ann! And every word is true!'"
+        exp: 3
+  - text: "\nYou hear an elvish bar song begin. It is a sing-song tune, mostly in old elvish."
+    select:
+      - evaluate: "player.race == 'elf'"
+        text: "You join in with the verses for the Mourning of Alandel and the Aria of Eleven Stars."
+        exp: 10
+      - text: "You understand very little, but you admit the tune is quite pleasant."
+        exp: 3

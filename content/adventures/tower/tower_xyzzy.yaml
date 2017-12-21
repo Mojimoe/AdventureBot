@@ -1,0 +1,5 @@
+handle: tower_xyzzy
+category: tower
+chance: 0.5
+once: True
+text: "You find a back room in the library. The room is dark, so you fetch a candle. Inside is a room plastered wall-to-wall with papers. Each one seems to be tacked to the wall, with thread connecting them. Upon closer inspection you see every paper has the same five letters scrawled upon it in red ink. *XYZZY*, and nothing else, repeated over and over. You wonder what it could mean."

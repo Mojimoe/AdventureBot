@@ -1,0 +1,16 @@
+handle: town_tournament_archery
+category: town
+text: "In the town square, a ring is set up for an archery tournament. A crier in bright clothes catches your eye. 'Care to test your archery prowess in honor of the silent queen?' he asks, offering you a bow."
+select:
+  - evaluate: player.dexterity_roll >= 12
+    text: "You nod, and grasp the bow. You fire an arrow, and it hits its mark square in the center of the bullseye. Then, for extra measure, you follow it up with a second bullseye arrow. You bow as the crowd cheers! You collect your winnings!"
+    exp: 10
+    gold: 10
+  - evaluate: player.dexterity_roll >= 8
+    text: "You nod, and grasp the bow. You fire an arrow, and it hits its mark square in the center of the bullseye. You bow as the crowd cheers! You collect your winnings!"
+    exp: 5
+    gold: 10
+  - evaluate: player.dexterity <= 1
+    text: "You eye the bow and the faraway target, and politely decline."
+  - text: "You nod, and grasp the bow. You fire an arrow, which hits the outer ring. You grumble and hand the bow back."
+    exp: 2

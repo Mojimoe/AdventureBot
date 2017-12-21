@@ -1,0 +1,16 @@
+handle: "pet_ghostfish"
+name: "ghostfish"
+slot: "pet"
+possible_names:
+  - 'Spooks'
+  - 'Wraith'
+  - 'Casper'
+  - 'Drowner'
+  - 'Ghostly'
+  - 'Egads'
+behaviors:
+  - floats in midair, glubbing softly.
+  - floats around your head, glowing faintly.
+  - floats upside down, motionless, in a mockery of death.
+  - is creepy as always.
+  - floats in little circles.

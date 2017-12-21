@@ -1,0 +1,6 @@
+handle: "mountain_pet_rock"
+category: "mountain"
+chance: 0.5
+evaluate: "not player.get_slot_filled('pet')"
+text: "You find a cave in a rocky cliff here. Following it, you find that it leads downward, lit by a string of hanging lanterns. Following the rocky tunnel, you reach a dead end. You are about to turn around when you spy a rock, sitting on the tunnel floor. The rock sits there. It is smooth and round, and would fit in your hand quite well. You feel a sudden attachment to this rock. You decide to adopt the rock."
+item: "pet_rock"

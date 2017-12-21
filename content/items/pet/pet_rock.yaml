@@ -1,0 +1,19 @@
+handle: "pet_rock"
+name: "pet rock"
+slot: "pet"
+possible_names:
+  - 'The Pebble'
+  - 'Mr. Pebs'
+  - 'Steve'
+  - 'Stoney'
+  - "Rocky"
+  - "Philip"
+  - "Skipper"
+  - "Dwayne"
+  - "Emma"
+behaviors:
+  - "sits there, motionless."
+  - "is as motionless as ever."
+  - "offers you silent moral support."
+  - "doesn't move even a little."
+  - "continues being a rock."

@@ -1,0 +1,37 @@
+handle: "tower_orb"
+category: "tower"
+text: "You find a room here full of towering bookshelves. In the middle of the books hovers a pearlescent orb, floating."
+select:
+  - evaluate: "player.get_visits('tower_orb') <= 4"
+    select:
+    - evaluate: "player.get_visits('tower_orb') == 0"
+      text: "You approach, curious. The orb emits a booming voice: '*GREETINGS. I AM ORB.*'"
+      sequence:
+        - text: "\nYou stagger back. Unsure of what to say, you say: 'Hello, orb?'\nORB booms back: '*HELLO,"
+          pytext: "player.race.upper() + '.*'"
+        - text: "'\nYou wonder what ORB is doing here. You leave ORB be."
+    - evaluate: "player.get_visits('tower_orb') == 1"
+      text: "\nYou recognize ORB. ORB emits a booming voice: '*GREETINGS, AGAIN. THANK YOU FOR VISITING ORB.*'\nYou greet ORB. ORB says nothing else, though, so you leave ORB be."
+      exp: 1
+    - evaluate: "player.get_visits('tower_orb') == 2"
+      text: "\nYou recognize ORB. ORB emits a booming voice: '*IT IS YOU. YOU ARE VISITING ORB AGAIN.*' ORB seems pleased at this.\nYou greet ORB and tell ORB of your recent adventures. ORB vibrates slightly."
+      exp: 2
+    - evaluate: "player.get_visits('tower_orb') == 3"
+      text: "\nYou recognize ORB. ORB emits a booming voice: '*HELLO. THANK YOU FOR VISITING ORB. ORB VERY LONELY HERE.*'\nYou ask ORB why it is lonely.\nORB responds: '*ORB CANNOT LEAVE. VERY FEW TALK TO ORB.*'\nYou resolve to talk to ORB more often."
+      exp: 3
+    - evaluate: "player.get_visits('tower_orb') == 4"
+      text: "\nYou recognize ORB. ORB emits a booming voice: '*GREETINGS, FRIEND-OF-ORB. THANK YOU FOR VISITING. ORB IS LESS LONELY WITH YOU AROUND.*'\nYou greet ORB. ORB vibrates pleasantly."
+      exp: 4
+      item: "title_orb_friend"
+      sequence:
+        - evaluate: "not world.get_flag('tower_orb')"
+          text: "**You sense you were the first to make friends with ORB.** :trophy:"
+          execute: "world.set_flag('tower_orb')"
+  - text: "\nYou recognize your friend, ORB."
+    random:
+      - text: "ORB speaks: '*FRIEND-OF-ORB, A REQUEST: I WOULD LIKE YOU TO READ ME A BOOK. I HAVE NO ARMS. OR EYES.*'\nYou gladly read ORB a book. ORB vibrates pleasantly."
+        exp: 7
+      - text: "ORB speaks: '*FRIEND-OF-ORB, I HAVE PROCURED SOMETHING FOR YOUR JOURNEY.*'\nORB floats over to a table that bears a number of perfect copper spheres. '*ORB PREDICTS YOUR SHOP KEEPERS CAN EXCHANGE THEM FOR SOME OF YOUR METAL CURRENCY.*'\nYou accept ORB's gift."
+        loot: 16
+      - text: "ORB speaks: '*FRIEND OF ORB, USE CAUTION AS YOU NAVIGATE THIS SPACE. IT IS MANY SIDED AND YOU ARE NOT.*'\nYou thank ORB for its advice."
+        exp: 2

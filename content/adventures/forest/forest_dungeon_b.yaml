@@ -1,0 +1,15 @@
+handle: forest_dungeon_b
+category: forest
+public: False
+text: "...you follow this dark tunnel as it twists through the earth. Eventually, the tunnel opens up into a small room with a low ceiling, hewn from stone. Here, you find a decayed skeleton, clutching a chest. \nBrushing the skeleton aside, you open the chest to find"
+sequence:
+  - random:
+    - text: "a cache of gold coins! You return to the surface, richer."
+      gold: 12
+    - text: "a suit of ancient chainmail, and several gold coins."
+      item: "armor_dungeoneers_mail"
+      gold: 6
+    - text: "a worn and chipped axe, and several gold coins."
+      item: "weapon_dungeoneers_axe"
+      gold: 6
+  - text: "\nYou return to the surface."

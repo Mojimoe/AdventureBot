@@ -1,0 +1,13 @@
+handle: "palace_mime"
+category: "palace"
+chance: 0.7
+text: "Here, amid some marble collumns, you find a man in black and white striped outfit. He waves to you, and then pretends to be trapped in a box."
+cases:
+  - evaluate: "player.has_affinity_for('charisma') and player.has_affinity_for('intellect') and player.alignment == 'chaotic'"
+    text: "\nYou grin. What a delightful act! You congratulate the mime."
+    exp: 4
+  - evaluate: "player.alignment == 'chaotic'"
+    text: "\nYou are about to say something, but suddenly twelve or so palace guards burst into the room. '*There's that mime!*' shouts one.\nThe mime takes off, and the guards follow in hot pursuit.\nYou smile. The system works."
+    exp: 3
+  - text: "\nYou are about to say something, but suddenly twelve or so palace guards burst into the room. '*There's that mime!*' shouts one.\nThe mime takes off, and the guards follow in hot pursuit.\nYou are puzzled by what has just transpired."
+    exp: 2

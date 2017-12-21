@@ -1,0 +1,5 @@
+handle: "tower_teleportitis_a"
+category: tower
+once: True
+text: "As you investigate the archives' ever-shifting rooms, you see a large raised platform made of worn copper. Arcane designs are carved into it. Curious, you investigate it. It seems to be... some sort of grand spell, carved into metal. You are unsure of what its function might be, as its runes are obscure.\nHesitantly, you step into the middle of the platform. An electric shock suddenly runs across your body!\n...And then nothing seems to happen. Maybe the machine was broken?"
+next: tower_teleportitis_b

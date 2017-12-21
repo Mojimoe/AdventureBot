@@ -1,0 +1,12 @@
+handle: "town_cat"
+category: "town"
+chance: 0.3
+evaluate: "not player.get_slot_filled('pet')"
+text: "Suddenly, you hear a faint mewl. Looking down, you see a stray"
+random:
+  - text: "calico cat! It brushes against you, purring. You hesitate for a moment, and then decide that this stray cat would make an excellent adventuring companion."
+    item: "pet_calico_cat"
+  - text: "black cat! It brushes against you, purring. You hesitate for a moment, and then decide that this stray cat would make an excellent adventuring companion."
+    item: "pet_black_cat"
+  - text: "tabby cat! It brushes against you, purring. You hesitate for a moment, and then decide that this stray cat would make an excellent adventuring companion."
+    item: "pet_tabby_cat"

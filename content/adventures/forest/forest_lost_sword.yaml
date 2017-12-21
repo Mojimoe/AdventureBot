@@ -1,0 +1,5 @@
+handle: "forest_lost_sword"
+category: "forest"
+evaluate: "player.wants_item('weapon_sword_of_ogre_decapitation')"
+text: "In a clearing here, you find a rusted flamberge sticking out of the ground. Resting next to is a severed ogre head. Hesitantly, you grip the blade. As you touch the weapon, you are immediately aware this sword wants only one thing: *to decapitate ogres.*"
+item: "weapon_sword_of_ogre_decapitation"

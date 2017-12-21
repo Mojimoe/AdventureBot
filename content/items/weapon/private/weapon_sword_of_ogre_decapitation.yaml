@@ -1,0 +1,6 @@
+name: "sword of ogre decapitation"
+handle: "weapon_sword_of_ogre_decapitation"
+slot: 'weapon'
+public: False
+tier: 3
+affinity: "strength"

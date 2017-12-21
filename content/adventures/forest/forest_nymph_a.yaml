@@ -1,0 +1,18 @@
+handle: "forest_nymph_a"
+category: "forest"
+text: "You find a crystal clear pool amidst some trees. From its glassy waters bursts forth a nymph! Her scaly body glistens in the sun, and her teeth are sharp and pointed."
+select:
+  - evaluate: "player.charisma_roll >= 9"
+    text: "She asks you to swim in the water with her. Her tone is honeyed, and she's quite clearly trying to convince you to get closer. You politely decline, and turn to leave."
+    exp: 6
+  - evaluate: "player.charisma_roll <= 4"
+    text: "She asks you to swim in the water with with her. You shrug and approach. The moment you step foot in the pool she surges forward, grabbing you with surprisingly sharp claws!"
+    select:
+      - evaluate: "player.strength_roll >= 9"
+        text: "You struggle as she drags you with surprising strength, trying to pull you beneath the water's surface. You twist and fight, breaking free! The nymph disappears beneath the waves. You haul yourself out of the water, dripping."
+        wound: True
+        exp: 4
+      - text: "She drags your struggling form beneath the water..."
+        next: "forest_nymph_b"
+  - text: "She asks you to swim in the water with her. You politely decline, but cautiously stay on the water's edge and speak with her for some time."
+    exp: 4

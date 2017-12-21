@@ -1,0 +1,9 @@
+handle: forest_sign
+category: forest
+text: Along a wooded path, you find a worn sign with red lettering.
+random:
+  - text: "Its painted lettering reads: '*Beware of kobolds*', but it has been scratched out and replaced with a crude '*Koboldz Rule*'."
+  - text: "It reads: '*How does one keep a sign maker busy?*'"
+  - text: "It reads: '*Any message here, up to seven words.*'"
+  - text: "It reads: '*No signs allowed!*'"
+  - text: "It reads: '*BEWARE OGRE!*' There's a small drawing of an ogre."

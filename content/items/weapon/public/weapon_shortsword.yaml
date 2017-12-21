@@ -1,0 +1,5 @@
+name: "shortsword"
+handle: "weapon_shortsword"
+slot: 'weapon'
+tier: 1
+affinity: "strength"

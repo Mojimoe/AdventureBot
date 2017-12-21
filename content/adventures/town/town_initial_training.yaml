@@ -1,0 +1,22 @@
+handle: "town_initial_training"
+category: "town"
+chance: 2
+evaluate: "player.level < 3 and player.gold >= 10"
+text: "You seek out a master adventurer who can teach you valuable skills.'"
+random:
+  - evaluate: player.strength_affinity >= 3
+    text: "You find an old barbarian in the adventurer's guild. He laughs and offers to teach you what he knows, for 10 gold. You pay him, and he spends the day instructing you in the ways of strength and bravery."
+    exp: 12
+    gold: -10
+  - evaluate: player.dexterity_affinity >= 3
+    text: "You find a sly rogue in the adventurer's guild. She chuckles and offers to teach you what she knows, for 10 gold. You pay her, and she spends the day instructing you in the ways of stealth and cunning."
+    exp: 12
+    gold: -10
+  - evaluate: player.intellect_affinity >= 3
+    text: "You find an old wizard in the adventurer's guild. He thinks pensively of your offer, and then offers to teach you what he knows, for 10 gold. You pay him, and he spends the day instructing you in the ways of sacred logic and magic runes."
+    exp: 12
+    gold: -10
+  - evaluate: player.charisma_affinity >= 3
+    text: "You find an dashing bard in the adventurer's guild. She laughs and offers to teach you what she knows, for 10 gold. You pay her, and she spends the day instructing you in the ways of song and speech."
+    exp: 12
+    gold: -10

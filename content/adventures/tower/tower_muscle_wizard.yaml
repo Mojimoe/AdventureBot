@@ -1,0 +1,13 @@
+handle: 'tower_muscle_wizard'
+category: 'tower'
+evaluate: "not player.get_flag('tower_muscle_wizard')"
+text: "You bump into a burly wizard here, who is wearing only a wizard's hat and a loincloth."
+select:
+  - evaluate: "player.get_visits('tower_muscle_wizard') == 0"
+    text: "He says: '*Yo, brah, my name's Julius. I'm the muscle wizard around these parts. You ever need some abracadabra done to your triceps, your glutes, your delts, I'm your man, brah. We could pump iron together.*'\nJulius is very insistent. You thank Julius for his offer, and tell him you'll consider it."
+  - evaluate: player.strength_affinity >= 3
+    text: "You recognize *Julius*, the *muscle wizard*. He says: '*Yo, brah. You wanna get your pump on with me?*' You agree. He leads you to his personal gym, where you lift weights until you are both hot and sweaty."
+    exp: 7
+    item: title_brosephus_maximus
+  - text: "You recognize *Julius*, the *muscle wizard*. He says: '*Yo, brah. You wanna get your pump on with me?*' You politely decline. Julius shrugs and says: '*Your loss, brah.*'"
+    execute: "player.set_flag('tower_muscle_wizard')"

@@ -1,0 +1,5 @@
+name: "wizard's robes"
+handle: "armor_wizards_robes"
+slot: 'armor'
+tier: 3
+affinity: "intellect"

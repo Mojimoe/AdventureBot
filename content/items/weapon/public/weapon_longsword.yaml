@@ -1,0 +1,5 @@
+name: "longsword"
+handle: "weapon_longsword"
+slot: 'weapon'
+tier: 1
+affinity: "strength"

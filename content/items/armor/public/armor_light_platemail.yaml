@@ -1,0 +1,5 @@
+name: "light platemail"
+handle: "armor_light_platemail"
+slot: 'armor'
+tier: 5
+affinity: "strength"

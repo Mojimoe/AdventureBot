@@ -1,0 +1,5 @@
+name: "black robes"
+handle: "armor_black_robes"
+slot: 'armor'
+tier: 1
+affinity: "intellect"

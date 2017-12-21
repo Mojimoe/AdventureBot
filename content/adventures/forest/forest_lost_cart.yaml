@@ -1,0 +1,9 @@
+handle: "forest_lost_cart"
+category: "forest"
+once: True
+text: "You find an overturned cart by the edge of the road here. It has a number of furs inside, and seems to have been overturned in some kind of struggle. Arrows protrude from its sides."
+select:
+  - evaluate: player.alignment == 'chaotic'
+    text: "Seeing no driver about, you take some of the lost furs."
+    loot: 8
+  - text: "You wonder what became of the driver."

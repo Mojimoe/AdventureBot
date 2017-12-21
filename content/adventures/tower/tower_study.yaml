@@ -1,0 +1,36 @@
+handle: "tower_study"
+category: "tower"
+chance: 2
+evaluate: "player.get_visits('tower_study') <= 9"
+text: "You find a secluded spot in the library amongst the archives, and begin to read ancient texts."
+select:
+  - evaluate: "player.get_visits('tower_study') == 0"
+    text: "The texts are fascinating... there is so much knowledge is to be had here! You read happily, lost in books. You note down significant texts for later."
+    exp: 10
+  - evaluate: "player.get_visits('tower_study') == 1"
+    text: "The texts are fascinating... you read up on the lineage of the silent queen, and how she came to lose her voice..."
+    exp: 9
+  - evaluate: "player.get_visits('tower_study') == 2"
+    text: "The texts are riveting. You read up on battle techniques employed during the golden era."
+    exp: 8
+  - evaluate: "player.get_visits('tower_study') == 3"
+    text: "The worn books here are quite interesting. You read up on tiamat and her kobold followers."
+    exp: 7
+  - evaluate: "player.get_visits('tower_study') == 4"
+    text: "You discover old books in the back of the library room, and you spend the day reading about leviathan anatomy."
+    exp: 6
+  - evaluate: "player.get_visits('tower_study') == 5"
+    text: "You re-read a few texts you've skimmed before. You feel like you learned a little more."
+    exp: 5
+  - evaluate: "player.get_visits('tower_study') == 6"
+    text: "You cross reference two accounts of the scarlet war, and note inconsistencies."
+    exp: 4
+  - evaluate: "player.get_visits('tower_study') == 7"
+    text: "You dive into the lineage of the pale king, and the far-off land he is said to hail from. You don't find much new information, though."
+    exp: 3
+  - evaluate: "player.get_visits('tower_study') == 8"
+    text: "You frustratedly skim texts, looking for something new."
+    exp: 2
+  - evaluate: "player.get_visits('tower_study') == 9"
+    text: "You are forced to conclude you've read everything worth reading in the public access section of the archives."
+    exp: 1

@@ -1,0 +1,15 @@
+handle: "forest_faries"
+category: "forest"
+text: "Suddenly, the forest around you lights up with bright colors. Small motes of light play about your clothes and dart in and out of your hair."
+select:
+  - evaluate: "player.intellect >= 5" # or flag, later
+    text: You recognize these as fairies. You speak a few words of the fairy language you have picked up. They chitter back in unison as a response, seemingly amused, before they scatter.
+    exp: 7
+  - evaluate: "player.charisma_roll >= 6"
+    text: The motes spiral around you, tickling your skin. One flies up to your face, revealing a humanoid and insectoid creature, barely an inch tall, glowing a pleasant pink. It taps your nose softly before the entire swarm flies off in unison, spiraling away.
+    exp: 5
+  - evaluate: "player.dexterity_roll >= 5"
+    text: You reach out quickly, and snare one of the motes of light between cupped hands. Peering into your hands, you see it is a small insectoid creature, humanoid in appearance, and glowing a pleasant pink. As soon as you set eyes upon it, the other glowing and flying creatures set upon your form, biting and clawing, until you release their comrade. They then fly off in a swirling cloud.
+    exp: 3
+  - text: You reach out to grab one, but the glowing motes dart away, scattering into the forest.
+    exp: 1

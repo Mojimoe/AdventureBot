@@ -1,0 +1,19 @@
+handle: "tower_discovery_b"
+category: "tower"
+public: False
+text: "...You approach the pale king's archival tower. As you reach its base, you realize the tower does not even touch the ground: the entire tower floats slightly, as if its base had crumbled away and the rest of the tower had simply refused to fall.\nBefore the tower, an old man sits cross-legged. His green cloak is ragged, and moss grows across his body, seemingly in symbiosis. He looks up from his book and speaks in a ragged tone. '*Hail. Why have you come to this ancient place?* \nYou hesitate, then answer:'"
+sequence:
+  - select:
+    - evaluate: "player.intellect_affinity >= 4"
+      text: " '*I merely seek knowledge.*'"
+    - evaluate: "player.charisma_affinity >= 4"
+      text: "'*I wish to know the secrets that lie here.*'"
+    - evaluate: "player.dexterity_affinity >= 4"
+      text: "'*I wish to learn the mysteries of the arcane.*'"
+    - evaluate: "player.strength_affinity >= 4"
+      text: "'*I wish to know of the power that lies here.*'"
+    - text: "'*I want to know what lies within.*'"
+  - text: "\nHe smiles. '*A great many are drawn to that. Be cautious within. The tower is ever-changing... Though the lower levels are safe enough, know this: delve too deep into the archives and you will suffer the same fate as the king...*'\nHe steps aside, and waves a hand. From the very earth, a staircase of dust assembles, leading up to door on the tower wall. '*Good luck. May you find what you seek.*'\n**You have discovered the achival tower!** :map:"
+  - evaluate: "not world.get_flag('tower_discovery')"
+    text: "**You sense you are the first adventurer to find this place.** :trophy:"
+    execute: "world.set_flag('tower_discovery')"

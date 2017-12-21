@@ -1,0 +1,18 @@
+handle: "tower_almanac"
+category: "tower"
+once: True
+text: "Here, you find a book in a glass case. The thin volume is labeled 'The adventurer almanac'. You open the case and withdraw it gently. You open the book, and it flips to a page that bears your smiling face! Beneath it are a series of numbers:"
+sequence:
+  - text: "\n*Strength: "
+    pytext: "str(player.strength) + '*'"
+  - text: "\n*Dexterity: "
+    pytext: "str(player.dexterity) + '*'"
+  - text: "\n*Intellect: "
+    pytext: "str(player.intellect) + '*'"
+  - text: "\n*Charisma: "
+    pytext: "str(player.charisma) + '*'"
+  - text: "\n*Alignment: "
+    pytext: "player.alignment + '*'"
+  - text: "\n*Star Sign: "
+    pytext: "player.horoscope + '*'"
+  - text: "\nYou gasp and recoil, dropping the almanac. That... can't be right, can it? You leave the room, feeling shaken."

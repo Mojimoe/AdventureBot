@@ -1,0 +1,6 @@
+name: "dagger"
+handle: "weapon_dagger"
+slot: 'weapon'
+verb: 'stab'
+tier: 1
+affinity: "dexterity"

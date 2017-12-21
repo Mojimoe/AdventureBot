@@ -1,0 +1,8 @@
+handle: "mountain"
+evaluate: "player.strength >= 5 and player.strength_affinity >= 3 and player.level >= 2"
+preambles:
+  - "You head to the western mountains."
+  - "You take a hike in the mountains."
+  - "You venture to the western mountains."
+  - "You travel to the mountains."
+  - "You head to the mountains."

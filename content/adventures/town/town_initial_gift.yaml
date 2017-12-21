@@ -1,0 +1,21 @@
+handle: "town_initial_gift"
+category: "town"
+once: True
+chance: 2.5
+evaluate: "player.level <= 2"
+text: "You spy an old man robed in red standing in front of the adventurer's guild. He locks eyes with you and grins. '*Hail, adventurer! It's dangerous to go alone!*'"
+select:
+  - evaluate: "not player.get_slot_filled('weapon')"
+    random:
+      - text: "He procures a longsword. '*Here, take this*.' He says. '*You're always welcome in town.*'"
+        item: weapon_longsword
+      - text: "He procures a dagger. '*Here, take this.*' He says. '*You're always welcome in town.*'"
+        item: weapon_dagger
+  - evaluate: "not player.get_slot_filled('armor')"
+    random:
+      - text: "He procures some leather armor. '*Here, take this*.' He says. '*You're always welcome in town.*'"
+        item: armor_leather_armor
+      - text: "He procures some wolf fur armor. '*Here, take this*.' He says. '*You're always welcome in town.*''"
+        item: armor_wolf_fur_armor
+  - text: "He offers you a sack of coin. '*Here, take this*.' He says. '*You're always welcome in town.*'"
+    gold: 8

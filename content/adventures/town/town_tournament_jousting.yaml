@@ -1,0 +1,16 @@
+handle: town_tournament_jousting
+category: town
+text: "In the town square, a ring is set up for a jousting tournament. A crier in bright clothes catches your eye. 'Care to test your jousting skill in honor of the silent queen?' he asks, offering you a lance."
+select:
+  - evaluate: player.strength_roll >= 12
+    text: "You nod, and mount a strong horse. Your armor-clad opponent eyes you. You grin back, confident. Your horse surges forward, and you level the lance. There is a resounding 'crack!' and your lance strikes its mark. Your opponent is dismounted, and you are victorious. You grin as the crowd cheers. You collect your winnings."
+    exp: 10
+    gold: 10
+  - evaluate: player.strength_roll >= 8
+    text: "You nod, and mount a strong horse. Your armor-clad opponent eyes you. You gulp, and the horse surges forward. You close your eyes and feel a resounding crack through your whole body. Opening your eyes, you see your opponent sprawled on the ground, and you still mounted! You grin as the crowd cheers. You collect your winnings."
+    exp: 5
+    gold: 10
+  - text: "You nod, and mount a strong horse. Your armor-clad opponent eyes you. You gulp, and the horse surges forward. You close your eyes and feel a resounding crack through your whole body. Then you hit the ground squarely. You have been dismounted. You dust yourself off and retreat as the crowd cheers for your opponent."
+    exp: 2
+  - evaluate: player.strength <= 1
+    text: "You eye the large horses and the armor-clad knights who compete, and politely decline."

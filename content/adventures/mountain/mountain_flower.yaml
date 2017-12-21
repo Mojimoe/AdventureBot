@@ -1,0 +1,12 @@
+handle: "mountain_flower"
+category: "mountain"
+text: "Here, by a rocky outcropping, you find several red flowers with black thorns. They twist around red-rock stones."
+select:
+  - evaluate: "player.intellect >= 6"
+    text: "You recognize these as bloodblossom plants, known for their medical applications. They only grow in high altitudes, so they are quite rare. They would likely fetch a nice price at market. You harvest them."
+    loot: 8
+  - evaluate: "player.intellect >= 4"
+    text: "You recognize these as bloodblossom plants, known for their healing properties. They would likely fetch a nice price at market. You harvest them."
+    loot: 8
+  - text: "You've never seen plants like this grow anywhere else. Maybe they will fetch a nice price? You harvest a couple."
+    loot: 8

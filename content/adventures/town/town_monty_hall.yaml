@@ -1,0 +1,22 @@
+handle: town_monty_hall
+category: town
+once: True
+text: "In the town square, you see a gnome in a tweed jacket. He excitedly catches your eye, and waves you over.\n'*Well, howdy there, stranger! My name is Monty, and I've got an offer for you!*' You raise an eyebrow. He continues. '*You see... I've got three treasure chests here. In one of them, there's a stack of gold coins. In the others, there's nothing! Pick the right one, and I'll give you the gold!*'\nYou raise your eyebrow higher. Monty keeps speaking, quickly: '*Don't you worry, there's no cost to play. I just get such a kick out of little games like this!*'\nSighing, you pick a treasure chest at random.\nMonty grins. He opens one of the chests you didn't pick. '*Look, there's nothing in this one. Guess you still have a chance! Still feeling lucky about your choice? Or would you rather switch?*''"
+select:
+  - evaluate: "player.intellect_roll >= 10"
+    text: "\nYou run through some quick probabilities in your head, and smile. You decide to switch chests.\nMonty smiles too, and he says: '*Very good choice, but it's all up to fate now... Let's see if you won.*'"
+    random:
+      - chance: 2
+        text: "\nMonty opens your treasure chest to reveal a pile of coins. '*Winner, winner!*', he says, beaming. You get the feeling you made Monty very happy. You collect your winnings."
+        exp: 8
+        gold: 11
+      - chance: 1
+        text: "\nMonty opens your treasure chest to reveal... nothing. Even he seems upset. '*Well, them's the breaks.*' He sighs. You smile and thank Monty for the opportunity."
+        exp: 8
+  - text: "\nYou feel like monty is trying to trick you, so you stick with your current treasure chest. Monty seems visibly upset."
+    random:
+      - chance: 1
+        text: "\nMonty opens your treasure chest to reveal a pile of coins. He whistles. '*Well, it worked out for ya.*' You thank Monty and collect your winnings. What an odd game."
+        gold: 11
+      - chance: 2
+        text: "\nMonty opens your treasure chest to reveal nothing. He shrugs. '*Well, them's the breaks.' Monty thanks you for playing. You walk away, still puzzled. What an odd game."

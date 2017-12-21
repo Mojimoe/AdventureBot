@@ -1,0 +1,7 @@
+handle: tower_forbidden_book_b
+category: tower
+public: False
+text: "...you awake a day later in the forest, with a pounding headache. You are covered in blood... some of it is yours. You feel different. You stumble back to town."
+wound: true
+exp: 13
+item: title_knower_of_the_forbidden

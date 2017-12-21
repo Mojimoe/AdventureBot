@@ -1,0 +1,5 @@
+handle: "camp"
+chance: 0.35
+preambles:
+  - "You stay in your camp."
+  - "You relax in your camp."

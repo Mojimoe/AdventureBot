@@ -1,0 +1,21 @@
+handle: pet_tabby_cat
+name: "tabby cat"
+slot: pet
+possible_names:
+  - Miles
+  - Patches
+  - Mac
+  - Abby
+  - Reese
+  - Emmy
+  - Freya
+behaviors:
+  - chases a nearby ball of fluff.
+  - keeps trying to eat your shoelaces.
+  - brushes up against you and purrs.
+  - mewls softly and takes a nap in your backpack.
+  - finds a bug and stalks it.
+  - yawns with a little mewling noise and curls up.
+  - takes a cat nap.
+  - keeps licking their paws.
+  - catches a mouse and brings it to you, proud.

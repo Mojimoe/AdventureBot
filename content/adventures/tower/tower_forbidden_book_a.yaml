@@ -1,0 +1,10 @@
+handle: tower_forbidden_book_a
+category: tower
+once: True
+text: You find a back room in the library with a sealed, silver box, about the size of a book.
+select:
+  - evaluate: player.alignment == 'chaotic'
+    text: "You brush your hand over the box. There is a faint inscription: '*Nine Gates Beyond*'. You gulp, but feel almost compelled to open the silver box. Your hand twitches toward it, and you open the lid.\nInside is a immaculately made book, bound in soft leather. You open the book..."
+    next: tower_forbidden_book_b
+  - text: "Inscribed upon it are the words: '*Nine Gates Beyond*'. You are overcome with dread... and an immediate compulsion to open the box. Your hand twitches toward it. You recoil and leave the room, unsure of what you have just experienced."
+    exp: 8

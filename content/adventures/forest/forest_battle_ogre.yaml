@@ -1,0 +1,20 @@
+handle: forest_battle_ogre
+category: forest
+text: "Suddenly, the ground rumbles. An ogre bursts forth from the underbrush, swining a massive club, flattening a tree as it does so! You're fighting an ogre!"
+battle: True
+select:
+  - evaluate: "player.has_item('weapon_sword_of_ogre_decapitation')"
+    text: "You decapitate the ogre in one blow! Its head rolls away. *Your sword seems smugly satisfied.*"
+    exp: 16
+    loot: 12
+    item: title_headhunter
+  - evaluate: "player.strength_roll >= 13" # TODO: This should follow battle logic.
+    text: "You defeat the ogre! It falls to its knees before you and collapses. You harvest some ogre bone from its corpse!"
+    exp: 16
+    loot: 12
+    item: title_slayer_of_ogres
+  - random:
+      - text: "The ogre grabs you and smashes you against the ground repeatedly. You wriggle free and flee!"
+        wound: True
+      - text: "The ogre flattens you with its heavy club! You scramble to your feet and retreat!"
+        wound: True

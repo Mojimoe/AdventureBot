@@ -1,0 +1,5 @@
+handle: "trinket_fishing_rod"
+name: fishing rod
+slot: 'trinket'
+tier: 0
+affinity: "charisma"

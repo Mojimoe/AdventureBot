@@ -1,0 +1,45 @@
+handle: "forest_riddle_dungeon_b"
+public: False
+category: "forest"
+text: "...you follow this dark tunnel as it twists through the earth. Eventually, the tunnel opens up into a small room with a low ceiling, hewn from stone.\nHere, you find a slab of obsidian, built into the floor. Carved on the obsidian in neat letters are the words:\n"
+random:
+  - text: "*Two bodies have I,\nthough both joined in one.\nThe more still I stand,\nthe quicker I run.*\n"
+    select:
+      - evaluate: "player.intellect_roll + player.get_visits('forest_riddle_dungeon_b') >= 11 "
+        text: "You say, out loud: '*An hourglass!*' The obsidian slab slides across the floor with a grinding noise, revealing a hidden compartment full of gold."
+        gold: 14
+        item: title_riddlemaster
+        execute: "player.set_flag('forest_riddle_dungeon')"
+        exp: 10
+      - text: "You ponder it for a while, but are unable to come up with an answer. You'll have to come back later."
+        exp: 3
+  - text: "*What runs around a city\nbut never moves?*\n"
+    select:
+      - evaluate: "player.intellect_roll + player.get_visits('forest_riddle_dungeon_b') >= 11 "
+        text: "You say, out loud: '*A wall!*' The obsidian slab slides across the floor with a grinding noise, revealing a hidden compartment full of gold."
+        gold: 14
+        item: title_riddlemaster
+        execute: "player.set_flag('forest_riddle_dungeon')"
+        exp: 10
+      - text: "You ponder it for a while, but are unable to come up with an answer. You'll have to come back later."
+        exp: 3
+  - text: "*I have rivers without water,\nForests without trees,\nMountains without rocks\nTowns without houses.*\n"
+    select:
+      - evaluate: "player.intellect_roll + player.get_visits('forest_riddle_dungeon_b') >= 11 "
+        text: "You say, out loud: '*A map!*' The obsidian slab slides across the floor with a grinding noise, revealing a hidden compartment full of gold."
+        gold: 14
+        item: title_riddlemaster
+        execute: "player.set_flag('forest_riddle_dungeon')"
+        exp: 10
+      - text: "You ponder it for a while, but are unable to come up with an answer. You'll have to come back later."
+        exp: 3
+  - text: "*They have not flesh, nor feathers,\nNor scales, nor bone.\nYet they have fingers and thumbs,\nAll of their own.*\n"
+    select:
+      - evaluate: "player.intellect_roll + player.get_visits('forest_riddle_dungeon_b') >= 11 "
+        text: "You say, out loud: '*Gloves!*' The obsidian slab slides across the floor with a grinding noise, revealing a hidden compartment full of gold."
+        gold: 14
+        item: title_riddlemaster
+        execute: "player.set_flag('forest_riddle_dungeon')"
+        exp: 10
+      - text: "You ponder it for a while, but are unable to come up with an answer. You'll have to come back later."
+        exp: 3

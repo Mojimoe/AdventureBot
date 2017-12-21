@@ -1,0 +1,5 @@
+handle: "tower_teleportitis_b"
+category: tower
+public: False
+text: "...You are about to leave the archives behind when suddenly, the world starts blurring. Guess that machine did something after all! **You have been afflicted with teleportitis!** The world disintegrates. You teleport somewhere else..."
+next: "tower_teleportitis_c"

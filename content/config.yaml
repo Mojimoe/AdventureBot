@@ -1,0 +1,12 @@
+delay:
+  min: 30
+  max: 60
+discord:
+  admin: '126573153462910977'
+  channel: '391295877387386912'
+  server: '386967198662656002'
+  token: 'Mzg3Mzg5MTUwODU4MzEzNzI5.DQfDtQ.WsGvh45QYGsB0fR8MQWemDgsdhE'
+sftp:
+  host: "home488243846.1and1-data.host"
+  username: "u74558932-winter"
+  password: "BotHost0987"

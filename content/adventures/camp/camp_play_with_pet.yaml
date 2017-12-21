@@ -1,0 +1,6 @@
+handle: camp_play_with_pet
+category: camp
+evaluate: "player.get_slot_filled('pet')"
+text: "You spend some time with your pet"
+pytext: "player.get_item_behavior('pet')"
+exp: 4

@@ -1,0 +1,12 @@
+handle: forest_dryad
+category: forest
+text: Suddenly, the trees before you shift and move, revealing them to be humanoid forms, made of bark and leaves.
+select:
+  - evaluate: player.intellect >= 4
+    text: You recognize these as dryads, and speak a few token words of their language. They speak back in flowing voices, and seem pleased. They sink back into the forest.
+    exp: 6
+  - evaluate: player.charisma >= 3
+    text: You stay calm and wave pleasantly. The tree-people mimic your actions. A chorus of laughter errupts from them before they sink back into the forest.
+    exp: 4
+  - text: Before you can act, one of the tree-folk steps forward and touches you gently. They clearly mean no harm. The tree people say something in an alien tongue, and then sink back into the forest. You feel like you learned... something?
+    exp: 2

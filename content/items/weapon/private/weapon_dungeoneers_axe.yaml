@@ -1,0 +1,6 @@
+name: "dungeoneer's axe"
+handle: "weapon_dungeoneers_axe"
+slot: 'weapon'
+public: False
+tier: 1
+affinity: "strength"

@@ -1,0 +1,16 @@
+handle: pet_cactus
+name: "cactus"
+slot: pet
+possible_names:
+  - Prickly
+  - Pokey
+  - Mr. Stabs
+  - Snuggles
+  - Richard VI
+  - Morgan
+behaviors:
+  - sits there, motionless.
+  - seems to be quite healthy.
+  - seems to be doing well. You can't even remember watering it.
+  - is pointy as always.
+  - seems to be a bit down in the dumps. You read it a good book.
