@@ -46,3 +46,5 @@ def load_config():
     sftp_username = content.get('sftp_username', '---')
     sftp_password = content.get('sftp_password', '---')
     item_level_difference = content.get('item_level_difference', 2)
+
+load_config()
