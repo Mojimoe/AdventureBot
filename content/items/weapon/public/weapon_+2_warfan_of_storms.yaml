@@ -1,0 +1,6 @@
+name: "+2 war-fan of storms"
+handle: "weapon_+2_war-fan of storms"
+slot: 'weapon'
+verb: 'cast'
+tier: 6
+affinity: "charisma"

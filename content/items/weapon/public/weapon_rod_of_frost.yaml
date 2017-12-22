@@ -1,0 +1,6 @@
+name: "+1 rod of frost"
+handle: "weapon_rod_of_frost"
+slot: 'weapon'
+verb: 'cast'
+tier: 5
+affinity: "intellect"

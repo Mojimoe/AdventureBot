@@ -245,10 +245,8 @@ async def admin_now(ctx):
 
         if player_instance is None:
             message += "You have no player character. " + emoji.no
-            await bot.say(message)
         else:
             message += "Got it. " + emoji.yes
-            await bot.say(message)
 
             player_instance.scheduled_adventure = utils.now()
 
@@ -292,7 +290,7 @@ def is_player_online(id):
 
 async def check_players_for_adventure():
     # Embarks any player that needs an adventure.
-    if len(world.players) == 0:
+    if world.players is None or len(world.players) == 0:
         return
 
     for player_id, player_instance in world.players.items():

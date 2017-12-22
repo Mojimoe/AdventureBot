@@ -1,0 +1,6 @@
+name: "+1 silvered rapier"
+handle: "weapon_+1_silvered_rapier"
+slot: 'weapon'
+verb: 'lunge'
+tier: 5
+affinity: "charisma"

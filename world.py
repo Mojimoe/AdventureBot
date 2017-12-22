@@ -60,6 +60,8 @@ def get_item(item_handle):
 
 
 def get_player(player_id):
+    if players is None:
+        return None
     return players.get(player_id, None)
 
 
@@ -110,9 +112,9 @@ adventures = {}
 items = {}
 rebuild_content()
 
-players = loader.load_pickle('saves/players.pickle')
-visits = loader.load_pickle('saves/visits.pickle')
-counters = loader.load_pickle('saves/counters.pickle')
-flags = loader.load_pickle('saves/flags.pickle')
+players = loader.load_pickle('saves/players.pickle', {})
+visits = loader.load_pickle('saves/visits.pickle', {})
+counters = loader.load_pickle('saves/counters.pickle', {})
+flags = loader.load_pickle('saves/flags.pickle', {})
 
 

@@ -1,0 +1,5 @@
+name: "fur armor"
+handle: "armor_fur_armor"
+slot: 'armor'
+tier: 2
+affinity: "dexterity"

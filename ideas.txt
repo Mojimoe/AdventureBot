@@ -1,0 +1,20 @@
+STR/DEX :
+STR/INT : Eldritch Knight
+STR/CHA :
+
+DEX/STR :
+DEX/INT :
+DEX/CHA :
+
+INT/STR : Spell-sword
+INT/DEX :
+INT/CHA : Sorcerer
+
+CHA/STR :
+CHA/DEX :
+CHA/INT : Warlock
+
+
+Pocket Sand
+Tentacle Rod
+The Bedazzler Dwarf, Glitterbeard

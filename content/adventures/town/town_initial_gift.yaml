@@ -16,6 +16,6 @@ select:
       - text: "He procures some leather armor. '*Here, take this*.' He says. '*You're always welcome in town.*'"
         item: armor_leather_armor
       - text: "He procures some wolf fur armor. '*Here, take this*.' He says. '*You're always welcome in town.*''"
-        item: armor_wolf_fur_armor
+        item: armor_fur_armor
   - text: "He offers you a sack of coin. '*Here, take this*.' He says. '*You're always welcome in town.*'"
     gold: 8

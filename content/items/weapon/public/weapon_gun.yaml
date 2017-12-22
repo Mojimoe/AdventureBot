@@ -1,0 +1,7 @@
+name: "gun"
+chance: 0.5
+handle: "weapon_gun"
+slot: 'weapon'
+verb: "shoot"
+tier: 8
+affinity: "none"

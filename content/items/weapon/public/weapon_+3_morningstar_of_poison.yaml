@@ -1,0 +1,6 @@
+name: "+3 morningstar of poison"
+handle: "weapon_+3_morningstar_of_poison"
+slot: 'weapon'
+verb: 'swing'
+tier: 7
+affinity: "strength"

@@ -1,0 +1,6 @@
+name: "+1 battle-axe of necrosis"
+handle: "weapon_+1_battleaxe_of_necrosis"
+slot: 'weapon'
+verb: 'swing'
+tier: 5
+affinity: "strength"

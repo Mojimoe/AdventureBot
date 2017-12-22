@@ -1,0 +1,6 @@
+name: "wand of fireball"
+handle: "weapon_wand_of_fireball"
+slot: 'weapon'
+verb: 'cast'
+tier: 4
+affinity: "intellect"

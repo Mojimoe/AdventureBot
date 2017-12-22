@@ -1,0 +1,6 @@
+name: "bladed ribbon"
+handle: "weapon_bladed ribbon"
+slot: 'weapon'
+verb: 'cast'
+tier: 2
+affinity: "charisma"

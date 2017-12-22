@@ -1,0 +1,6 @@
+name: "sellsword twinblades"
+handle: "weapon_sellsword_twinblades"
+slot: 'weapon'
+verb: 'swing'
+tier: 4
+affinity: "dexterity"

@@ -1,0 +1,6 @@
+name: "bandit's knife"
+handle: "weapon_bandits_knife"
+slot: 'weapon'
+verb: 'swing'
+tier: 2
+affinity: "dexterity"

@@ -1,0 +1,6 @@
+name: "zweihander"
+handle: "weapon_wand_of_blasting"
+slot: 'weapon'
+verb: 'blast'
+tier: 2
+affinity: "strength"

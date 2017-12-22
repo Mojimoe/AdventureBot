@@ -1,0 +1,6 @@
+name: "+1 spear of thunder"
+handle: "weapon_+1_spear_of_thunder"
+slot: 'weapon'
+verb: 'stab'
+tier: 5
+affinity: "strength"

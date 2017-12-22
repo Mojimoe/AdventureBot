@@ -1,0 +1,5 @@
+name: "wool onsie"
+handle: "armor_wool_onsie"
+slot: 'armor'
+tier: 0
+affinity: "strength"

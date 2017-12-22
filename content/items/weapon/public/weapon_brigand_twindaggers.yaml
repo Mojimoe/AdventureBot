@@ -1,0 +1,6 @@
+name: "brigand twindaggers"
+handle: "weapon_bringand_twindaggers"
+slot: 'weapon'
+verb: 'swing'
+tier: 3
+affinity: "intellect"

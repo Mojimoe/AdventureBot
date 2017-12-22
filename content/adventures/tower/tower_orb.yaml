@@ -1,5 +1,6 @@
 handle: "tower_orb"
 category: "tower"
+chance: 2
 text: "You find a room here full of towering bookshelves. In the middle of the books hovers a pearlescent orb, floating."
 select:
   - evaluate: "player.get_visits('tower_orb') <= 4"

@@ -1,0 +1,6 @@
+name: "+3 impractical fantasy sword"
+handle: "weapon_+3_wand_of_inversion"
+slot: 'weapon'
+verb: 'cast'
+tier: 7
+affinity: "charisma"

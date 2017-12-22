@@ -1,0 +1,6 @@
+name: "+4 rusted sea mine"
+handle: "weapon_+2_wand_of_inversion"
+slot: 'weapon'
+verb: 'swing'
+tier: 8
+affinity: "charisma"

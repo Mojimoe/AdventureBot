@@ -1,0 +1,6 @@
+name: "+3 double-glaive"
+handle: "weapon_+3_double_glaive"
+slot: 'weapon'
+verb: 'swing'
+tier: 7
+affinity: "dexterity"

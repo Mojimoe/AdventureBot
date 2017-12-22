@@ -87,7 +87,8 @@ def get_future_timestamp(days=0, hours=0, minutes=0, seconds=0):
     return datetime.datetime.utcnow() + datetime.timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
 
 
-def timedelta(days=0, hours=0, minutes=0, seconds=0)
+def timedelta(days=0, hours=0, minutes=0, seconds=0):
+    return datetime.timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
 
 
 def clone(object):

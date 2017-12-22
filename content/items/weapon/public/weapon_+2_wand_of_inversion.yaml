@@ -1,0 +1,6 @@
+name: "+2 wand of inversion"
+handle: "weapon_+2_wand_of_inversion"
+slot: 'weapon'
+verb: 'cast'
+tier: 6
+affinity: "intellect"

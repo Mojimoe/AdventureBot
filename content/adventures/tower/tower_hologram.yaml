@@ -1,5 +1,5 @@
 handle: tower_hologram
 category: tower
 once: True
-text: "You see a ghostly apparition among some books. It seems to flicker, its features constantly changing. The figure screams at you: '*The universe is a hologram! Reality is an illusion! Buy gold! Buy-'\nIt vanishes."
+text: "You see a ghostly apparition among some books. It seems to flicker, its features constantly changing. The figure screams at you: '*The universe is a hologram! Reality is an illusion! Buy gold! Buy-*'\nIt vanishes."
 exp: 3

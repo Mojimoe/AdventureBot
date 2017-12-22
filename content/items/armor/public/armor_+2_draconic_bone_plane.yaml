@@ -1,0 +1,5 @@
+name: "+2 draconic bone plate"
+handle: "armor_+2_draconic_bone_plate"
+slot: 'armor'
+tier: 3
+affinity: "strength"

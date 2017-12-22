@@ -1,0 +1,6 @@
+name: "wand of blasting"
+handle: "weapon_wand_of_blasting"
+slot: 'weapon'
+verb: 'blast'
+tier: 3
+affinity: "intellect"

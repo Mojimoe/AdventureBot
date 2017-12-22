@@ -10,15 +10,18 @@ import category
 import item
 
 
-def load_pickle(filename):
+def load_pickle(filename, default=None):
     try:
         file = open(filename, 'rb')
         content = pickle.load(file)
         file.close()
-        return content
+        if content is None:
+            return default
+        else:
+            return content
     except Exception as e:
         utils.log_exception(e)
-        return {}
+        return default
 
 
 def save_pickle(content, filename):
@@ -30,15 +33,30 @@ def save_pickle(content, filename):
         utils.log_exception(e)
 
 
-def load_yaml(filename):
+def load_yaml(filename, default=None):
     try:
-        file = open(filename, 'rb')
+        file = open(filename, 'r')
         content = yaml.load(file)
         file.close()
-        return content
+        if content is None:
+            return default
+        else:
+            return content
     except Exception as e:
         utils.log_exception(e)
-        return None
+        return default
+
+
+def save_yaml(content, filename):
+    if content is None:
+        return
+
+    try:
+        file = open(filename, 'w')
+        yaml.dump_all(content, file, default_flow_style=False)
+        file.close()
+    except Exception as e:
+        utils.log_exception(e)
 
 
 def convert_yaml_to_objects(template, globpath):

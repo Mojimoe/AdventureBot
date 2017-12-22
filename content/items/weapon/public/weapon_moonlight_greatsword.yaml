@@ -1,0 +1,6 @@
+name: "+2 moonlight greatsword"
+handle: "weapon_moonlight_greatsword"
+slot: 'weapon'
+verb: 'swing'
+tier: 7
+affinity: "none"
