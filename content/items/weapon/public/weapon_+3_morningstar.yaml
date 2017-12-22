@@ -1,0 +1,7 @@
+name: "+3 morningstar"
+handle: "weapon_+3_morningstar"
+slot: 'weapon'
+verb: 'swing'
+tier: 7
+affinity: "strength"
+enchanted: True

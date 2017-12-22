@@ -4,3 +4,4 @@ slot: 'weapon'
 verb: 'lunge'
 tier: 5
 affinity: "charisma"
+enchanted: True

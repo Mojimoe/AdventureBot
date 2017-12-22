@@ -1,5 +1,5 @@
 name: "zweihander"
-handle: "weapon_wand_of_blasting"
+handle: "weapon_zweihander"
 slot: 'weapon'
 verb: 'blast'
 tier: 2

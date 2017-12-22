@@ -1,6 +1,0 @@
-name: "+1 frost katana"
-handle: "weapon_+1_frost_katana"
-slot: 'weapon'
-verb: 'swing'
-tier: 5
-affinity: "dexterity"

@@ -1,0 +1,7 @@
+name: "+2 great-hammer"
+handle: "weapon_+2_greathammer"
+slot: 'weapon'
+verb: 'swing'
+tier: 6
+affinity: "strength"
+enchanted: True

@@ -1,0 +1,7 @@
+name: "+1 winged spear"
+handle: "weapon_+1_winged_spear"
+slot: 'weapon'
+verb: 'stab'
+tier: 5
+affinity: "strength"
+enchanted: True

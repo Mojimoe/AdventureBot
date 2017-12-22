@@ -1,7 +1,7 @@
-name: "+3 double-glaive"
-handle: "weapon_+3_double_glaive"
+name: "+1 katana"
+handle: "weapon_+1_katana"
 slot: 'weapon'
 verb: 'swing'
-tier: 7
+tier: 5
 affinity: "dexterity"
 enchanted: True

@@ -4,3 +4,4 @@ slot: 'weapon'
 verb: 'cast'
 tier: 7
 affinity: "charisma"
+enchanted: True

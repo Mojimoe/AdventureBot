@@ -1,6 +1,6 @@
 delay:
-  min: 30
-  max: 60
+  min: 1
+  max: 1.1
 discord:
   admin: '126573153462910977'
   channel: '391295877387386912'
@@ -9,4 +9,4 @@ discord:
 sftp:
   host: "home488243846.1and1-data.host"
   username: "u74558932-winter"
-  password: "BotHost0987"
+  password: "replaceme"

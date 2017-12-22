@@ -1,8 +1,8 @@
 import utils
-import datetime
 import emoji
 import config
 import world
+
 
 class Player:
     def __init__(self):
@@ -114,7 +114,7 @@ class Player:
     def get_item_name(self, slot):
         item = self.get_item_instance(slot)
         if item is not None:
-            return item.name
+            return item.name + item.enchant
         else:
             return 'nothing'
 
@@ -657,6 +657,7 @@ class Player:
 
     def run_shop(self):
         rand_item = self.get_valid_shop_item()
+        rand_item.roll()
 
         message = self.get_tag(True) + ": "
         message += "You visit a shop in town. "
@@ -670,12 +671,12 @@ class Player:
         if rand_item is not None:
             price = rand_item.get_price()
 
-            message += "The shopkeeper offers you a " + rand_item.name + " for " + str(price) + " gold."
+            message += "The shopkeeper offers you a " + rand_item.get_tag() + " for " + str(price) + " gold."
 
             if self.gold < price:
-                message += ".. but you are unable to afford it."
+                message += ". You are unable to afford it."
             elif self.wants_item(rand_item):
-                message += " You purchase it! You **lose " + str(price) + " gold**, but you **gain the " + rand_item.name + "** " + emoji.item + "!"
+                message += " You purchase it! You **spend " + str(price) + " gold**, but you **gain the " + rand_item.get_tag() + "** " + emoji.item + "!"
                 self.gold += -price
 
                 old_item = self.items.get(rand_item.slot, None)

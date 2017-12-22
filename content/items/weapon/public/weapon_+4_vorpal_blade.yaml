@@ -4,3 +4,4 @@ slot: 'weapon'
 verb: 'snicker-snack'
 tier: 8
 affinity: "strength"
+enchanted: True

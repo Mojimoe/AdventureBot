@@ -1,0 +1,7 @@
+name: "+1 battle-axe"
+handle: "weapon_+1_battleaxe"
+slot: 'weapon'
+verb: 'swing'
+tier: 5
+affinity: "strength"
+enchanted: True

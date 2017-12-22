@@ -1,6 +1,0 @@
-name: "+2 hammer of freezing"
-handle: "weapon_+2_hammer_of_freezing"
-slot: 'weapon'
-verb: 'swing'
-tier: 6
-affinity: "strength"

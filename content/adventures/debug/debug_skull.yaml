@@ -1,6 +1,0 @@
-handle: "debug_skull"
-category: town
-public: False
-evaluate: "not player.get_slot_filled('pet')"
-text: "You find a skull here."
-item: "pet_skull"

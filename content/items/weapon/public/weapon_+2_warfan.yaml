@@ -1,0 +1,7 @@
+name: "+2 war-fan"
+handle: "weapon_+2_war-fan"
+slot: 'weapon'
+verb: 'cast'
+tier: 6
+affinity: "charisma"
+enchanted: True
